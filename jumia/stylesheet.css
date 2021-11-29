@@ -32,7 +32,6 @@ nav
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
-    flex-wrap: wrap;
     position: fixed;
     z-index: 1;
     
@@ -91,7 +90,6 @@ nav img
 nav ul
 {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
 }
 nav ul li
@@ -104,10 +102,8 @@ nav ul li a
     color: #000000;
     padding: 8px 15px;
     border-radius: 5px;
-    letter-spacing: 1px;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500;
     transition: all 0.3s ease;
 }
 nav ul li i 
@@ -128,8 +124,7 @@ nav ul li i
 {
     height: 100%; 
     width: 160px; 
-    top: 150px;  
-    overflow-x: hidden; 
+    top: 150px;   
     padding-top: 95px; 
     margin-bottom: 50px; 
     flex: 20%;
@@ -177,7 +172,6 @@ nav ul li i
 {
     width: 2400px;
     height: 420px;
-    clear: both;
     position: relative;
     transition: left 2s;
     
@@ -190,7 +184,7 @@ nav ul li i
     height: 420px;
     margin: 0px;
     padding: 0px;
-    position: relative;
+    position: relative; /* relative --> position by height and width (left , right ...)*/
     
 }
 
@@ -265,11 +259,11 @@ nav ul li i
     box-sizing: border-box;
     border-radius: 5px;
 }
-.row > .column 
+.row  .column 
 {
     padding: 0 8px;
 }
-.row1 > .column 
+.row1  .column 
 {
     padding: 0 8px;
 }
@@ -525,7 +519,6 @@ footer .links
 footer ul
 {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
     padding-left: 155px;
 
